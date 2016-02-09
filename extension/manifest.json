@@ -5,6 +5,8 @@
   "description": "This extension pins DELETE button to delete photo in Google Photos Web interface",
   "version": "1.0.0",
 
+  "icons": { "32": "icon32x32.png", "128": "icon128x128.png"},
+
   "content_scripts":[
     {
 	"js": ["del_key_means_delete.js"],
