@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Google Photos Delete Shortcut",
+  "description": "This extension pins DELETE button to delete photo in Google Photos Web interface",
+  "version": "1.0.0",
+
+  "content_scripts":[
+    {
+	"js": ["del_key_means_delete.js"],
+	"matches":["https://photos.google.com/photo/*"],
+	"run_at": "document_end"
+    }
+  ]
+}
